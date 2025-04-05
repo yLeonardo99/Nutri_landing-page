@@ -1,0 +1,101 @@
+.contact {
+    background-color: rgba($accent-color, 0.1);
+
+    .section-title {
+        @include section-title;
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $spacing-lg;
+    }
+
+    &-info {
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: $spacing-md;
+            color: $dark-color;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: $spacing-md;
+
+            i {
+                color: $primary-color;
+                margin-right: $spacing-sm;
+                font-size: 1.2rem;
+                margin-top: 3px;
+            }
+
+            p {
+                color: $gray;
+            }
+        }
+
+        .social-links {
+            display: flex;
+            gap: $spacing-sm;
+            margin-top: $spacing-lg;
+
+            a {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                @include flex-center;
+                background-color: $primary-color;
+                color: $white;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: $secondary-color;
+                    transform: translateY(-3px);
+                }
+            }
+        }
+    }
+
+    &-form {
+        background-color: $white;
+        padding: $spacing-lg;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+
+        .form-group {
+            margin-bottom: $spacing-md;
+
+            input, textarea {
+                width: 100%;
+                padding: $spacing-sm;
+                border: 1px solid #ddd;
+                border-radius: $border-radius;
+                font-family: $primary-font;
+                transition: border-color 0.3s ease;
+
+                &:focus {
+                    outline: none;
+                    border-color: $primary-color;
+                }
+            }
+
+            textarea {
+                height: 120px;
+                resize: vertical;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            padding: $spacing-sm;
+        }
+    }
+
+    @include media-md {
+        &-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}

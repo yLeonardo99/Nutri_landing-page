@@ -1,0 +1,24 @@
+// Importações
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'header';
+@import 'hero';
+@import 'services';
+@import 'about';
+@import 'testimonials';
+@import 'contact';
+@import 'footer';
+
+// Media Queries
+@include media-lg {
+    // Estilos para telas grandes
+}
+
+@include media-md {
+    // Estilos para telas médias
+}
+
+@include media-sm {
+    // Estilos para telas pequenas
+}

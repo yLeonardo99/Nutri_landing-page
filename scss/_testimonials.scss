@@ -1,0 +1,99 @@
+.testimonials {
+    background-color: $white;
+
+    .section-title {
+        @include section-title;
+    }
+
+    &-slider {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .testimonial {
+        display: none;
+        background-color: $white;
+        padding: $spacing-lg;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        text-align: center;
+
+        &.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        p {
+            font-style: italic;
+            margin-bottom: $spacing-md;
+            color: $gray;
+            font-size: 1.1rem;
+        }
+
+        .client-info {
+            @include flex-center;
+            justify-content: center;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: $spacing-sm;
+            }
+
+            h4 {
+                font-size: 1.1rem;
+                color: $dark-color;
+                margin-bottom: $spacing-xs;
+            }
+
+            span {
+                font-size: 0.8rem;
+                color: $gray;
+            }
+        }
+    }
+
+    .slider-controls {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        @include flex-between;
+        padding: 0 $spacing-md;
+
+        button {
+            background-color: $primary-color;
+            color: $white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            @include flex-center;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: $secondary-color;
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @include media-sm {
+        .slider-controls {
+            position: static;
+            transform: none;
+            justify-content: center;
+            margin-top: $spacing-md;
+            gap: $spacing-md;
+        }
+    }
+}

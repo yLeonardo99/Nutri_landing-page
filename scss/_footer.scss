@@ -1,0 +1,52 @@
+.footer {
+    background-color: $dark-color;
+    color: $white;
+    padding: $spacing-xl 0 0;
+
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: $spacing-lg;
+        margin-bottom: $spacing-xl;
+    }
+
+    &-col {
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: $spacing-md;
+            color: $white;
+            font-family: $secondary-font;
+        }
+
+        p {
+            color: rgba($white, 0.7);
+            margin-bottom: $spacing-sm;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-bottom: $spacing-xs;
+
+                a {
+                    color: rgba($white, 0.7);
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        text-align: center;
+        padding: $spacing-md 0;
+        border-top: 1px solid rgba($white, 0.1);
+        color: rgba($white, 0.7);
+        font-size: 0.9rem;
+    }
+}

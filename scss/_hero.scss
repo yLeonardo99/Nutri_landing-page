@@ -1,0 +1,74 @@
+.hero {
+    margin-top: 80px;
+    background-color: rgba($accent-color, 0.1);
+    padding: $spacing-xl 0;
+
+    .container {
+        @include flex-between;
+        align-items: center;
+    }
+
+    &-content {
+        flex: 1;
+        padding-right: $spacing-lg;
+
+        h1 {
+            font-family: $secondary-font;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: $spacing-md;
+            line-height: 1.2;
+
+            span {
+                color: $primary-color;
+            }
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: $spacing-lg;
+            color: $gray;
+        }
+
+        .btn {
+            padding: $spacing-sm $spacing-lg;
+            font-size: 1.1rem;
+        }
+    }
+
+    &-image {
+        flex: 1;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: $border-radius-lg;
+            box-shadow: $box-shadow-lg;
+        }
+    }
+
+    @include media-md {
+        .container {
+            flex-direction: column;
+        }
+
+        &-content {
+            padding-right: 0;
+            margin-bottom: $spacing-lg;
+            text-align: center;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    @include media-sm {
+        &-content {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
