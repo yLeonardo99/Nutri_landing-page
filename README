@@ -1,34 +1,52 @@
-# Bella Hair - Landing Page
+# NutriVida - Consultoria Nutricional
 
-Landing page moderna para salão de cabeleireiro com design responsivo e animações.
+Landing page profissional para nutricionistas com design moderno e responsivo.
 
-## Recursos
+## 📌 Visão Geral
+Página de conversão otimizada para consultórios de nutrição, destacando:
+- Serviços especializados
+- Credenciais profissionais
+- Depoimentos reais
+- Formas de contato
 
-- Design responsivo para todos os dispositivos
+## ✨ Recursos
+
+### 🖥 Design Responsivo
+- Adaptação perfeita para mobile/tablet/desktop
 - Menu hamburger para mobile
-- Animações suaves ao rolar
-- Cards de serviços estilizados
-- Gradientes atraentes
-- Formulário de contato funcional
-- Seção de depoimentos
-- Efeitos de hover interativos
+- Layout flexível
 
-## Tecnologias utilizadas
+### 🎯 Seções Estratégicas
+1. **Hero Section** - Chamada principal com CTA
+2. **Serviços** - 4 cards com ícones
+3. **Sobre** - Apresentação profissional
+4. **Depoimentos** - Carrossel de clientes
+5. **Contato** - Formulário + informações
 
-- HTML5 semântico
-- Sass (SCSS) para estilização modular
-- JavaScript para interatividade
-- Font Awesome para ícones
-- Google Fonts (Poppins e Playfair Display)
+### 💡 Interatividade
+- Animações suaves
+- Efeitos hover
+- Slider de depoimentos
+- Formulário funcional
 
-## Como usar
+## 🛠 Tecnologias
 
-1. Clone o repositório
+| Tecnologia | Descrição |
+|------------|-----------|
+| HTML5 | Estrutura semântica |
+| CSS3 | Estilização moderna |
+| JavaScript | Funcionalidades |
+| Font Awesome | Ícones profissionais |
+| Google Fonts | Tipografia premium |
 
-2. Instale as dependências (se necessário)
-3. Execute o comando `sass --watch scss:css` para compilar o Sass
-4. Abra o arquivo `index.html` no navegador
+## 🚀 Como Usar
 
-## Personalização
+```bash
+# 1. Clone o projeto
+git clone https://seurepositorio.com/nutrivida.git
 
-Para personalizar as cores, fontes e outros estilos, edite os arquivos na pasta `scss`, especialmente `_variables.scss`.
+# 2. Acesse a pasta
+cd nutrivida
+
+# 3. Abra no navegador
+start index.html
